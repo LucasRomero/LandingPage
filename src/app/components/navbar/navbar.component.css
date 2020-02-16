@@ -1,0 +1,15 @@
+.header .navbar {
+  background-color: transparent !important;
+}
+
+.header {
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.my-nav {
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  word-wrap: break-word;
+}

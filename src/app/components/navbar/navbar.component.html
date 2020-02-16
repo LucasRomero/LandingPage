@@ -1,0 +1,50 @@
+<header class="header">
+  <nav class="my-nav navbar navbar-expand-lg navbar-light bg-light position-fixed">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <ul class="navbar-nav m-auto links">
+          <li class="nav-item active" *ngFor="let seccion of secciones">
+            <a class="nav-link" [routerLink]='"."' [fragment]="seccion"> {{ seccion }}</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="">
+              <fa-icon [icon]="faCoffee"></fa-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Llamada de slider de imagenes -->
+
+    <div style="background-attachment: fixed;">
+      <app-slider></app-slider>
+    </div>
+  </header>
+
+    <hr style="width: 70%;">
+    <!-- Secciones -->
+    <section [id]="secciones[0]">
+      <app-home></app-home>
+    </section>
+    <section [id]="secciones[1]" style="margin-top: 20px; height: 800px;">
+      <app-quiesoy></app-quiesoy>
+    </section>
+    <section [id]="secciones[2]">
+      <app-videos></app-videos>
+    </section>
+    <section [id]="secciones[3]">
+      <app-colaborar></app-colaborar>
+    </section>
+    <section [id]="secciones[4]">
+      <app-fotos></app-fotos>
+    </section>

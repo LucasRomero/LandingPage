@@ -8,13 +8,14 @@ import { InfoComponent } from './about/info/info.component';
 
 
 @NgModule({
-  declarations: [AboutComponent, LinksComponent, InfoComponent],
+  declarations: [
+    AboutComponent,
+     LinksComponent,
+      InfoComponent
+    ],
   imports: [
     CommonModule,
-    AboutRoutingModule,
-    AboutComponent,
-    LinksComponent,
-    InfoComponent
+    AboutRoutingModule
   ]
 })
 export class AboutModule { }
